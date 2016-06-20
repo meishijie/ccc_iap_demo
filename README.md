@@ -25,10 +25,10 @@ cp -a ~/.sdkbox/plugins/sdkbox-iap_v2.2.3.3/plugin/android/jni/* build/jsb-defau
 
 modify
 
-- build/jsb-default/frameworks/cocos2d-x/cocos/cocos2d.h
-- build/jsb-default/frameworks/runtime-src/Classes/PluginIAPJSHelper.cpp
-- build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk
-- build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java
+- [build/jsb-default/frameworks/cocos2d-x/cocos/cocos2d.h](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-b3c1658c06ba3903a707f0b16517ae41R33)
+- [build/jsb-default/frameworks/runtime-src/Classes/PluginIAPJSHelper.cpp](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-df14cc78522f82c4177f4ab65e50ca03R175)
+- [build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-3e845b9bb3a3cc3412915236cc9c6ed3R16)
+- [build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-3984758f6350741360984c417d427fe5R39)
 
 
 ## error logs
@@ -47,7 +47,7 @@ HelloWorld/build/jsb-default/frameworks/runtime-src/Classes/PluginIAPJS.cpp:29:2
 
 the spidermonkey upgraded.
 
-[A] modify HelloWorld/build/jsb-default/frameworks/cocos2d-x/cocos/cocos2d.h
+[A] modify [build/jsb-default/frameworks/cocos2d-x/cocos/cocos2d.h](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-b3c1658c06ba3903a707f0b16517ae41R33)
 
 ```
 #define COCOS2D_VERSION 0x00031000
@@ -62,7 +62,7 @@ lie to SDKBox
 HelloWorld/build/jsb-default/frameworks/runtime-src/Classes/PluginIAPJSHelper.cpp:175:15: No member named 'scheduleSelector' in 'cocos2d::Scheduler'
 ```
 
-[A] scheduleSelector -> schedule
+[A] [scheduleSelector -> schedule](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-df14cc78522f82c4177f4ab65e50ca03R175)
 
 
 3.
@@ -72,7 +72,7 @@ E/cocos2d-x(21365): ScriptingCore::callFunctionName error:__errorHandler wasn't 
 E/cocos js error:(21365): <no filename="filename"> line:0 msg:too much recursion
 ```
 
-[A] HelloWorld/build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk define `LOCAL_CPPFLAGS := -DSDKBOX_ENABLED`
+[A] [build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-3e845b9bb3a3cc3412915236cc9c6ed3R22) define `LOCAL_CPPFLAGS := -DSDKBOX_ENABLED`
 
 
 4.
@@ -99,6 +99,24 @@ I/DEBUG   (23443):     #15 pc 0003a939  /data/dalvik-cache/arm/data@app@org.coco
 V/AEE/AED (23443): dashboard_record_update() : rec->module = org.cocos2d.hello_world
 ```
 
-[A] modify HelloWorld/build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java
+[A] modify [build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java](https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-3984758f6350741360984c417d427fe5R39)
 
 > test code
+
+AppDelegate.cpp
+```
+#include "PluginIAPJS.hpp"
+#include "PluginIAPJSHelper.h"
+
+sc->addRegisterCallback(register_all_PluginIAPJS);
+sc->addRegisterCallback(register_all_PluginIAPJS_helper);
+```
+
+main.js
+```
+console.log('Success to load scene: ' + launchScene);
+sdkbox.IAP.init();
+```
+
+https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-00d2f89baca6f1fb21d09069142b4517R7
+https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-971adb57c7c2623516099edbba5b5d1cR96
