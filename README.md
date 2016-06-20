@@ -6,7 +6,32 @@ Hello world new project template.
 - frameworks/cocos2d-x/external/win32
 - android x86 arm64 lib
 
-> error logs
+## iOS
+
+```
+open ~/.sdkbox/plugins/sdkbox-iap_v2.2.3.3/plugin/ios/
+open build/jsb-default/frameworks/runtime-src/proj.ios_mac/hello_world.xcodeproj/
+```
+
+![iap_ios](tut/iap_ios.gif)
+
+## Android
+
+```
+mkdir -p build/jsb-default/frameworks/runtime-src/proj.android/libs/
+cp -a ~/.sdkbox/plugins/sdkbox-iap_v2.2.3.3/plugin/android/libs/* build/jsb-default/frameworks/runtime-src/proj.android/libs/
+cp -a ~/.sdkbox/plugins/sdkbox-iap_v2.2.3.3/plugin/android/jni/* build/jsb-default/frameworks/runtime-src/proj.android/jni/
+```
+
+modify
+
+- build/jsb-default/frameworks/cocos2d-x/cocos/cocos2d.h
+- build/jsb-default/frameworks/runtime-src/Classes/PluginIAPJSHelper.cpp
+- build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk
+- build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java
+
+
+## error logs
 
 1.
 
