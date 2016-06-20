@@ -55,7 +55,7 @@
                 cc.view.enableRetina(true);
             }
             //cc.view.setDesignResolutionSize(_CCSettings.designWidth, _CCSettings.designHeight, cc.ResolutionPolicy.SHOW_ALL);
-        
+
             if (cc.sys.isBrowser) {
                 setLoadingDisplay();
             }
@@ -92,6 +92,8 @@
                     // cc.game.resume();
 
                     console.log('Success to load scene: ' + launchScene);
+
+                    sdkbox.IAP.init();
                 }
             );
 

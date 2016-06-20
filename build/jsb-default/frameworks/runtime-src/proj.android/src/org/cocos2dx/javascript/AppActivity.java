@@ -3,7 +3,7 @@ Copyright (c) 2008-2010 Ricardo Quesada
 Copyright (c) 2010-2012 cocos2d-x.org
 Copyright (c) 2011      Zynga Inc.
 Copyright (c) 2013-2014 Chukong Technologies Inc.
- 
+
 http://www.cocos2d-x.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,6 +26,7 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.javascript;
 
+import android.content.Intent;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
@@ -35,6 +36,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 // -------------------------------------
 
+import com.sdkbox.plugin.SDKBox;
 public class AppActivity extends Cocos2dxActivity {
 
     private static AppActivity app = null;
@@ -43,8 +45,45 @@ public class AppActivity extends Cocos2dxActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         app = this;
+
+        SDKBox.init(this);
     }
-	
+    @Override
+    protected void onStart() {
+          super.onStart();
+          SDKBox.onStart();
+    }
+    @Override
+    protected void onStop() {
+          super.onStop();
+          SDKBox.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SDKBox.onResume();
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SDKBox.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(!SDKBox.onBackPressed()) {
+            super.onBackPressed();
+        }
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(!SDKBox.onActivityResult(requestCode, resultCode, data)) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+
     @Override
     public Cocos2dxGLSurfaceView onCreateView() {
         Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);

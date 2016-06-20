@@ -5,7 +5,7 @@
 library/
 temp/
 local/
-build/
+#build/
 
 #/////////////////////////////////////////////////////////////////////////////
 # Logs and databases
@@ -59,3 +59,14 @@ quick_gen_project_*_autogen.sh.meta
 #/////////////////////////////////////////////////////////////////////////////
 
 .idea/
+build/jsb-default/frameworks/cocos2d-x/cocos/platform/android/java/bin
+build/jsb-default/frameworks/cocos2d-x/cocos/platform/android/java/gen
+local.properties
+build/jsb-default/frameworks/cocos2d-x/cocos/scripting/js-bindings/proj.ios_mac/cocos2d_js_bindings.xcodeproj/xcuserdata
+build/jsb-default/frameworks/cocos2d-x/build/cocos2d_libs.xcodeproj/xcuserdata
+build/jsb-default/frameworks/runtime-src/proj.ios_mac/hello_world.xcodeproj/project.xcworkspace
+build/jsb-default/frameworks/runtime-src/proj.ios_mac/hello_world.xcodeproj/xcuserdata
+build/jsb-default/simulator
+build/jsb-default/frameworks/runtime-src/proj.android/bin
+build/jsb-default/frameworks/runtime-src/proj.android/gen
+build/jsb-default/frameworks/runtime-src/proj.android/assets
