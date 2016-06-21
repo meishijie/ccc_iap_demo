@@ -496,7 +496,7 @@ bool js_PluginFacebookJS_PluginFacebook_getFriends(JSContext *cx, uint32_t argc,
         std::vector<sdkbox::FBGraphUser> ret = sdkbox::PluginFacebook::getFriends();
         size_t size = ret.size();
 
-#ifndef __COCOS2D_CCDEPRECATED_H__
+#if !defined(CCArray) && (COCOS2D_VERSION >= 0x00030000)
         cocos2d::ValueVector array;
         for (int i = 0; i < size; i++)
         {
