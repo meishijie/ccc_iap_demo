@@ -57,6 +57,12 @@
 		9FAC2E101D17C2E9003C5069 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAC2E0F1D17C2E9003C5069 /* Security.framework */; };
 		9FAC2E121D17C2EF003C5069 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAC2E111D17C2EF003C5069 /* StoreKit.framework */; };
 		9FAC2E141D17C2FA003C5069 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAC2E131D17C2FA003C5069 /* SystemConfiguration.framework */; };
+		9FF04AD31D18E40900C70132 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF04ACF1D18E40900C70132 /* FBSDKCoreKit.framework */; };
+		9FF04AD41D18E40900C70132 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF04AD01D18E40900C70132 /* FBSDKLoginKit.framework */; };
+		9FF04AD51D18E40900C70132 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF04AD11D18E40900C70132 /* FBSDKShareKit.framework */; };
+		9FF04AD61D18E40900C70132 /* PluginFacebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF04AD21D18E40900C70132 /* PluginFacebook.framework */; };
+		9FF04ADB1D18E41900C70132 /* PluginFacebookJS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF04AD71D18E41900C70132 /* PluginFacebookJS.cpp */; };
+		9FF04ADC1D18E41900C70132 /* PluginFacebookJSHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF04AD91D18E41900C70132 /* PluginFacebookJSHelper.cpp */; };
 		A92275421517C094001B78AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275411517C094001B78AA /* QuartzCore.framework */; };
 		A92275441517C094001B78AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275431517C094001B78AA /* OpenGLES.framework */; };
 		A92275461517C094001B78AA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92275451517C094001B78AA /* OpenAL.framework */; };
@@ -193,6 +199,14 @@
 		9FAC2E0F1D17C2E9003C5069 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		9FAC2E111D17C2EF003C5069 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		9FAC2E131D17C2FA003C5069 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		9FF04ACF1D18E40900C70132 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		9FF04AD01D18E40900C70132 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		9FF04AD11D18E40900C70132 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		9FF04AD21D18E40900C70132 /* PluginFacebook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginFacebook.framework; sourceTree = "<group>"; };
+		9FF04AD71D18E41900C70132 /* PluginFacebookJS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFacebookJS.cpp; sourceTree = "<group>"; };
+		9FF04AD81D18E41900C70132 /* PluginFacebookJS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PluginFacebookJS.hpp; sourceTree = "<group>"; };
+		9FF04AD91D18E41900C70132 /* PluginFacebookJSHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginFacebookJSHelper.cpp; sourceTree = "<group>"; };
+		9FF04ADA1D18E41900C70132 /* PluginFacebookJSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFacebookJSHelper.h; sourceTree = "<group>"; };
 		A922753D1517C094001B78AA /* hello_world-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello_world-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92275411517C094001B78AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A92275431517C094001B78AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -260,14 +274,18 @@
 				9FAC2E051D17C03C003C5069 /* sdkbox.framework in Frameworks */,
 				D6B061241803AB9F0077942B /* CoreMotion.framework in Frameworks */,
 				1A82F5FB169AC92500C4B13A /* libsqlite3.dylib in Frameworks */,
+				9FF04AD51D18E40900C70132 /* FBSDKShareKit.framework in Frameworks */,
 				D454520C156E22BD00887EB5 /* libz.dylib in Frameworks */,
 				4D697BDA1CBD301C00A5AF29 /* libjs_static.a in Frameworks */,
+				9FF04AD41D18E40900C70132 /* FBSDKLoginKit.framework in Frameworks */,
 				A92275421517C094001B78AA /* QuartzCore.framework in Frameworks */,
 				A92275441517C094001B78AA /* OpenGLES.framework in Frameworks */,
 				A92275461517C094001B78AA /* OpenAL.framework in Frameworks */,
 				A92275481517C094001B78AA /* AudioToolbox.framework in Frameworks */,
 				A922754A1517C094001B78AA /* AVFoundation.framework in Frameworks */,
 				A922754C1517C094001B78AA /* UIKit.framework in Frameworks */,
+				9FF04AD31D18E40900C70132 /* FBSDKCoreKit.framework in Frameworks */,
+				9FF04AD61D18E40900C70132 /* PluginFacebook.framework in Frameworks */,
 				A922754E1517C094001B78AA /* Foundation.framework in Frameworks */,
 				A92275501517C094001B78AA /* CoreGraphics.framework in Frameworks */,
 			);
@@ -354,6 +372,10 @@
 		A92275401517C094001B78AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FF04ACF1D18E40900C70132 /* FBSDKCoreKit.framework */,
+				9FF04AD01D18E40900C70132 /* FBSDKLoginKit.framework */,
+				9FF04AD11D18E40900C70132 /* FBSDKShareKit.framework */,
+				9FF04AD21D18E40900C70132 /* PluginFacebook.framework */,
 				9FAC2E131D17C2FA003C5069 /* SystemConfiguration.framework */,
 				9FAC2E111D17C2EF003C5069 /* StoreKit.framework */,
 				9FAC2E0F1D17C2E9003C5069 /* Security.framework */,
@@ -417,6 +439,10 @@
 		D4545214156E28EF00887EB5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9FF04AD71D18E41900C70132 /* PluginFacebookJS.cpp */,
+				9FF04AD81D18E41900C70132 /* PluginFacebookJS.hpp */,
+				9FF04AD91D18E41900C70132 /* PluginFacebookJSHelper.cpp */,
+				9FF04ADA1D18E41900C70132 /* PluginFacebookJSHelper.h */,
 				9FAC2E061D17C053003C5069 /* PluginIAPJS.cpp */,
 				9FAC2E071D17C053003C5069 /* PluginIAPJS.hpp */,
 				9FAC2E081D17C053003C5069 /* PluginIAPJSHelper.cpp */,
@@ -599,6 +625,8 @@
 				509D4AC917EBB2AB00697056 /* RootViewController.mm in Sources */,
 				9FAC2E0E1D17C053003C5069 /* SDKBoxJSHelper.cpp in Sources */,
 				9FAC2E0C1D17C053003C5069 /* PluginIAPJS.cpp in Sources */,
+				9FF04ADC1D18E41900C70132 /* PluginFacebookJSHelper.cpp in Sources */,
+				9FF04ADB1D18E41900C70132 /* PluginFacebookJS.cpp in Sources */,
 				D4545227156E28EF00887EB5 /* AppDelegate.cpp in Sources */,
 				509D4AC817EBB2AB00697056 /* main.m in Sources */,
 				9FAC2E0D1D17C053003C5069 /* PluginIAPJSHelper.cpp in Sources */,

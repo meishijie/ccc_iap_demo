@@ -7,6 +7,8 @@
 #ifdef SDKBOX_ENABLED
 #include "PluginIAPJS.hpp"
 #include "PluginIAPJSHelper.h"
+#include "PluginFacebookJS.hpp"
+#include "PluginFacebookJSHelper.h"
 #endif
 
 USING_NS_CC;
@@ -51,6 +53,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 #ifdef SDKBOX_ENABLED
     sc->addRegisterCallback(register_all_PluginIAPJS);
     sc->addRegisterCallback(register_all_PluginIAPJS_helper);
+    sc->addRegisterCallback(register_all_PluginFacebookJS);
+    sc->addRegisterCallback(register_all_PluginFacebookJS_helper);
 #endif
     sc->start();
     sc->runScript("script/jsb_boot.js");

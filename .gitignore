@@ -70,3 +70,5 @@ build/jsb-default/simulator
 build/jsb-default/frameworks/runtime-src/proj.android/bin
 build/jsb-default/frameworks/runtime-src/proj.android/gen
 build/jsb-default/frameworks/runtime-src/proj.android/assets
+build/jsb-default/frameworks/runtime-src/proj.android/libs/facebook_lib/bin
+build/jsb-default/frameworks/runtime-src/proj.android/libs/facebook_lib/gen

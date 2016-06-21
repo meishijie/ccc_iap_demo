@@ -94,6 +94,7 @@
                     console.log('Success to load scene: ' + launchScene);
 
                     sdkbox.IAP.init();
+                    sdkbox.PluginFacebook.init();
                 }
             );
 
