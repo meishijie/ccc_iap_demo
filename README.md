@@ -4,6 +4,8 @@
 
 If you link this repo, please <a class="github-button" href="https://github.com/yinjimmy/ccc_iap_demo" data-icon="octicon-star" data-style="mega" data-count-href="/yinjimmy/ccc_iap_demo/stargazers" data-count-api="/repos/yinjimmy/ccc_iap_demo#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star yinjimmy/ccc_iap_demo on GitHub">Star</a> it ;)
 
+2016-06-20: add iap plugin
+2016-06-21: add facebook plugin
 
 ## clean codebase
 
