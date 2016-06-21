@@ -1,3 +1,5 @@
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 # Cocos Creator v1.1.1 with SDKBox
 
 If you link this repo, please <a class="github-button" href="https://github.com/yinjimmy/ccc_iap_demo" data-icon="octicon-star" data-style="mega" data-count-href="/yinjimmy/ccc_iap_demo/stargazers" data-count-api="/repos/yinjimmy/ccc_iap_demo#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star yinjimmy/ccc_iap_demo on GitHub">Star</a> it ;)
