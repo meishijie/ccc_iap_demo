@@ -1,7 +1,9 @@
-# hello-world
-Hello world new project template.
+# Cocos Creator v1.1.1 with SDKBox
 
-> remvoe code
+If you link this repo, please <a class="github-button" href="https://github.com/yinjimmy/cc_iap_demo" data-icon="octicon-star" data-style="mega" data-count-href="/yinjimmy/cc_iap_demo/stargazers" data-count-api="/repos/yinjimmy/cc_iap_demo#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star yinjimmy/cc_iap_demo on GitHub">Star</a> it ;)
+
+
+## clean codebase
 
 - frameworks/cocos2d-x/external/win32
 - android x86 arm64 lib
@@ -120,3 +122,6 @@ sdkbox.IAP.init();
 
 https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-00d2f89baca6f1fb21d09069142b4517R7
 https://github.com/yinjimmy/ccc_iap_demo/commit/d50bd5c9bb67383aa8ac8be74626054c2ea69a79#diff-971adb57c7c2623516099edbba5b5d1cR96
+
+
+If you link this repo, please <a class="github-button" href="https://github.com/yinjimmy/cc_iap_demo" data-icon="octicon-star" data-style="mega" data-count-href="/yinjimmy/cc_iap_demo/stargazers" data-count-api="/repos/yinjimmy/cc_iap_demo#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star yinjimmy/cc_iap_demo on GitHub">Star</a> it ;)
